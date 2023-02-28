@@ -1,0 +1,151 @@
+
+* {box-sizing: border-box;} 
+
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Open+Sans:wght@300;400&family=Roboto+Slab:wght@100;200&family=Roboto:wght@100&display=swap');
+
+body {background-image: url(./ReservAR_img/presence-ii.png);
+                        width: auto;
+                        height: auto;
+                        text-align: center;
+                        align-items: center;
+                        font-size: small;
+                        font-size: 50%;
+                        padding: auto;
+                        margin: auto;
+                        }
+
+.barra_de_navegacion {  width: auto;
+                        height: auto;
+                        margin: 20px;
+                        padding: 30px;
+                        text-align:right;
+                        font-size: 25px;
+                        color: aliceblue;
+                        text-decoration: none;
+                        background-image: url(./ReservAR_img/terraza2.jpg);
+                        background-position: center center;
+                        background-repeat:no-repeat;
+                        background-size: cover;
+            }
+
+main  {padding: auto;
+        margin: 30px;
+        width: auto;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        font-family:sans-serif;}
+
+main h1{font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+            'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+            'Open Sans', 'Helvetica Neue', sans-serif;
+color: brown;
+font-size: 32px;
+}
+
+main h2 {font-family: sans-serif;
+font-size: 22px;
+}
+label {font-size: 10px;
+        height: auto;
+        width: auto;}
+
+#fachadaedeficio {max-width: 70%;}
+
+.imagen_menu_principal:hover{transform: scale(1.5); transition: all;}
+
+
+#img_amenities {width: auto; 
+                height: 250px;
+                display: block;
+                margin: auto;}
+
+#main_page{text-align: center; 
+          justify-content: center; 
+          margin: 50px;
+          padding-top: 10px;
+          font-size: 25px;}
+
+a :hover {color: rgb(240, 8, 8); }
+
+
+#calendario-formulario {font-size: 15px; text-align: center; padding: 2px; cursor: pointer}
+
+#fecha_calendario{font-size: 20px; text-align: center; padding: 2px; cursor: pointer}
+
+#boton_de_turno{font-size: 20px; text-align: center; padding: 2px; cursor: pointer}
+
+#texto-Turno{font-size: 20px; margin: 10px;}
+
+#main_confirmacion {font-size: 40px;
+                    color: rgb(231, 154, 37);
+                    text-align: center;
+                    justify-content: center;}
+
+.boton_aceptar {cursor: pointer; 
+    transition: 0.6s; 
+    width: 10%; 
+    padding: 4px; 
+    font-size: 15px; 
+    font-weight: bold; 
+    color: white;
+    background: rgb(43, 43, 110);
+    }
+
+    .slider {
+	width: 95%;
+	margin: 30px;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: cambio 15s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 50%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+#fotosqr {max-width: 5%;
+         float:right;
+         padding: 5px;}
+
+
+footer {height:auto;
+        width: auto;
+        font-size:20px;
+        text-align:inherit;
+        color:black;
+        padding: 30px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        box-sizing:border-box;
+        background-image: url(./ReservAR_img/terraza-verde.jpg);
+        background-position: center center;
+        background-repeat:no-repeat;
+        background-size: cover;
+        }
+
+        /* comando para iniciar SCSS npm run build-css */
