@@ -12,25 +12,34 @@
 </head>
 <body id="body-index">
     <header class="barra_de_navegacion">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <nav>
-                        <ul class="nav justify-content-end">
-                            <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="contacto.html" target="_blank">CONTACTO</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="amenities.html" target="_blank">MENU PRINCIPAL</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="salir.html">SALIR</a>
-                            </li>
-                          </ul>
-                    </nav>
-                </div>
-            </div>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+        <header x-data="{ open: false }" class="header">
+
+        <div class="header__logo">
+            
         </div>
+        
+        <button class="header__button-nav--open" x-on:click="open = true">MENU</button>
+        
+        <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
+
+            <div class="nav__button" x-on:click="open = false">
+                <button class="header__button-nav--close">Cerrar</button>
+            </div>
+
+            <ul class="nav__ul">
+                <li class="nav__item"><a href="contacto.html" class="nav__link" target="_blank">CONTACTO</a></li>
+                <li class="nav__item"><a href="amenities.html" class="nav__link" target="_blank">MENU PRINCIPAL</a></li>
+                <li class="nav__item"><a href="#" class="nav__link" target="_blank">SALIR</a></li>
+
+            </ul>
+        </nav>
+    </header>
+<!-- Fin Header -->
+
+
     </header>
     <main>
         <section>

@@ -33,6 +33,36 @@
                 </div>
             </div>
         </div>
+                <!--menu anterior-->
+        <!--prueba de boton-->
+        <!-- AlpineJS para gestionar el evento Clic -->
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<!-- Header -->
+<header x-data="{ open: false }" class="header">
+  <!-- Logo -->
+  <div class="header__logo">
+    
+  </div>
+  <!-- Boton abrir -->
+  <button class="header__button-nav--open" x-on:click="open = true">MENU</button>
+  <!-- Navegador -->
+  <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
+    <!-- Boton cerrar -->
+    <div class="nav__button" x-on:click="open = false">
+      <button class="header__button-nav--close">Cerrar</button>
+    </div>
+    <!-- Menu -->
+    <ul class="nav__ul">
+      <li class="nav__item"><a href="contacto.html" class="nav__link" target="_blank">CONTACTO</a></li>
+      <li class="nav__item"><a href="amenities.html" class="nav__link" target="_blank">MENU PRINCIPAL</a></li>
+      <li class="nav__item"><a href="#" class="nav__link" target="_blank">SALIR</a></li>
+
+    </ul>
+  </nav>
+  <!-- Fin Navegador -->
+</header>
+<!-- Fin Header -->
     </header>
 
     <main>
